@@ -8,7 +8,7 @@
 
 
    <shared-search-box
-   placeholderhijo="desde"
+   placeholderhijo="Capital"
    (onValue)="searchByCapital($event)"
 
    ></shared-search-box>
@@ -27,6 +27,8 @@
   <div class="col">
 
     <hr>
+
+      <countries-table [countries]="countries"></countries-table>
 
     Tabla de resutados
   </div>

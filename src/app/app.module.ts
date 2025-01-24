@@ -4,11 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { CountriesModule } from './countries/countries.module';
-
-
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,11 +15,8 @@ import { CountriesModule } from './countries/countries.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
-
-
-
-
+    SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
